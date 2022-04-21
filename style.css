@@ -10,21 +10,32 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
     width: 100vw;
+    height: 60px;
 }
 
+
+
 .logo {
-    font-size: 24px;
-    color: #f9faf8; 
-    font-weight: bold;
     width: 500px;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.img_0 {
+    width: 50px;
+    height: 40px;
+    
 }
 
 .list {
     width: 500px;
+    height: 60px;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
 
@@ -33,7 +44,7 @@ li, a {
     color: #e5e7eb;
     text-decoration: none;
     display: inline-block;
-    padding: 10px 0 10px 20px;
+    padding-left: 20px;
     text-align: end;
 }
 
@@ -81,8 +92,8 @@ button {
 }
 
 .img_1 {
-width: 500px;
-height: 400px;
+    width: 500px;
+    height: 400px;
 }
 
 .main {
