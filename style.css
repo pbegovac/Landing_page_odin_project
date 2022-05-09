@@ -37,7 +37,7 @@ header {
 }
 
 .list {
-    width: 50vw;
+    width: 50px;
     height: 60px;
     display: flex;
     justify-content: flex-end;
@@ -99,7 +99,7 @@ button {
    border-radius: 4px;
    cursor: pointer;
    color: #e5e7eb;
-    text-decoration: none;
+text-decoration: none;
     font-weight: 600;
 }
 
@@ -302,7 +302,10 @@ h2 {
     }
 
     .elements {
+        width: 80%;
         padding: 15px;
+        align-items: center;
+        justify-content: start;
     }
     
     .img_1 {
@@ -344,5 +347,11 @@ h2 {
 
     .n_main {
         display: none;
+    }
+
+    .footer {
+        width: 100%;
+       
+        
     }
 }
