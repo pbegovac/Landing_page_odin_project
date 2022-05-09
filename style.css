@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    padding: 0 270px 0 270px;  
+    padding: 0 17.5% 0 17.5%;  
 }
 
 .logo {
@@ -38,7 +38,6 @@ header {
 }
 
 .list {
-    width: 50px;
     height: 60px;
     display: flex;
     justify-content: flex-end;
@@ -51,7 +50,7 @@ li, .anchor {
     text-decoration: none;
     display: inline-block;
     padding-left: 20px;
-    text-align: end;
+    text-align: center;
 }
 
 li:hover {
@@ -66,7 +65,9 @@ li:hover {
     background-color: #1f2937;
     display: flex;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    padding: 0 17.5% 0 17.5%; 
+        
 }
 
 .elements {
@@ -241,7 +242,7 @@ h2 {
 .footer {
     width: 100vw;
     max-width: 100%;
-    height: 90px;
+    height: 70px;
     background-color: #1f2937;
     color: #e5e7eb;
     display: flex;
@@ -250,7 +251,7 @@ h2 {
     
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 950px) {
     header {
        width: 100%;
         height: 10%; 
@@ -294,7 +295,7 @@ h2 {
 
     .introduction {
         width: 100%;
-        height: 550px;
+        height: 70vh;
         background-color: #1f2937;
         display: flex;
         justify-content: center;
@@ -306,7 +307,15 @@ h2 {
         width: 80%;
         padding: 15px;
         align-items: center;
-        justify-content: start;
+        justify-content: center;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+
+    .subtext {
+        font-size: medium;
     }
     
     .img_1 {
@@ -357,7 +366,5 @@ h2 {
 
     .footer {
         width: 100%;
-       
-        
     }
 }
