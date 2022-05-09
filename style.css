@@ -321,6 +321,11 @@ h2 {
 
     }
 
+    .main_2 {
+        width: 100%;
+        margin: 0px;
+    }
+
     .quote_2 {
         font-size: 30px;
     }
