@@ -1,0 +1,16 @@
+$themeColor: #1f2937;
+$fontColor: #e5e7eb;
+$btnColor: #3882f6;
+$quoteColor: #2bbc6f38;
+
+@mixin width {
+  width: 100vw;
+  max-width: 100%;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}

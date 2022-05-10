@@ -1,0 +1,200 @@
+@import "./variables";
+@import "./mediaQ";
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  @include width;
+  height: 10vh;
+  background-color: $themeColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 17.5% 0 17.5%;
+  .logo {
+    width: 15vw;
+    height: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    .img_0 {
+      width: 50px;
+      height: 40px;
+      cursor: pointer;
+      transition: all 2s ease;
+      transform: rotate(0deg);
+    }
+    .img_0:hover {
+      transform: rotate(360deg);
+    }
+  }
+  .list {
+    height: 60px;
+    @include flexCenter(row);
+    li,
+    .anchor {
+      font-size: 18px;
+      color: $fontColor;
+      text-decoration: none;
+      display: inline-block;
+      padding-left: 20px;
+      text-align: center;
+    }
+    li:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.introduction {
+  @include width();
+  @include flexCenter(row);
+  height: 550px;
+  background-color: $themeColor;
+  padding: 0 17.5% 0 17.5%;
+  .elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    h1 {
+      font-size: 48px;
+      font-weight: bold;
+      color: $fontColor;
+      line-height: 0.9;
+      padding-bottom: 40px;
+    }
+    .subtext {
+      font-size: 18px;
+      color: $fontColor;
+      padding-bottom: 30px;
+      text-align: justify;
+    }
+  }
+  .image_holder {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-end;
+    .img_1 {
+      width: 500px;
+      height: 400px;
+    }
+  }
+}
+
+button {
+  background-color: $btnColor;
+  width: 100px;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: $fontColor;
+  text-decoration: none;
+  font-weight: 600;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.main {
+  @include flexCenter(column);
+  padding-bottom: 50px;
+  h2 {
+    padding: 50px;
+  }
+  .avocados {
+    @include flexCenter(row);
+    .avo_1 {
+      @include flexCenter(column);
+      width: 250px;
+      height: 400px;
+      text-align: center;
+      .avo {
+        width: 250px;
+        height: 300px;
+        transition: all 0.25s ease-in;
+        &:hover {
+          opacity: 0.7;
+          transform: scale(1.02);
+        }
+      }
+      .para {
+        margin-top: 5px;
+        height: 95px;
+      }
+    }
+  }
+}
+
+.main_2 {
+  height: 400px;
+  @include width();
+  background-color: $quoteColor;
+  @include flexCenter(column);
+  .quote {
+    color: $themeColor;
+    width: 50vw;
+    .quote_2 {
+      font-size: 36px;
+      font-style: italic;
+      font-weight: lighter;
+      @include flexCenter(row);
+    }
+    .author {
+      font-size: 30px;
+      font-weight: bold;
+      display: flex;
+      justify-content: end;
+      margin-top: 5px;
+    }
+  }
+}
+
+.end {
+  height: 350px;
+  width: 100vw;
+  max-width: 100%;
+  @include flexCenter(row);
+  .call_to_action {
+    background-color: $btnColor;
+    width: 70vw;
+    height: 150px;
+    border-radius: 7px;
+    color: $fontColor;
+    @include flexCenter(row);
+    .para2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      width: 50vw;
+      .mainp {
+        font-weight: 900;
+        font-size: medium;
+      }
+      .n_main {
+        font-size: small;
+      }
+    }
+  }
+}
+
+.btn {
+  @extend button;
+  border: 2px solid $fontColor;
+}
+
+.footer {
+  width: 100vw;
+  max-width: 100%;
+  height: 70px;
+  background-color: $themeColor;
+  color: $fontColor;
+  @include flexCenter(row);
+}
